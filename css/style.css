@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --transparent-cyan: rgba(0, 255, 247, .3);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size-def: 18px;
+}
+
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    font-family: Outfit;
+}
+body::-webkit-scrollbar { 
+    width: 0; 
+}
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+}
+.card {
+    width: 350px;
+    margin: auto;
+    background-color: var(--Very-dark-blue-card-BG);
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.card__image {
+    height: 302px;
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.view {
+    height: 302px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    background-color: var(--transparent-cyan);
+    opacity: 0;
+    transition: .5s;
+}
+.view:hover {
+    opacity: 100%;
+    transition: .5s;
+}
+.card__name {
+    text-decoration: none;
+    color: var(--White);
+    transition: .5s;
+}
+.card__name h2 {
+    margin-top: 20px;
+}
+.card__name:hover {
+    color: var(--Cyan);
+    transition: .5s;
+}
+.card__descryption {
+    color: var(--Soft-blue);
+    font-size: var(--Font-size-def);
+    margin-top: 20px;
+}
+.card__price-and-date {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: var(--Font-size-def);
+}
+.price {
+    color: var(--Cyan);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.eth-logo {
+    padding-right: 7px;
+}
+.date {
+    color: var(--Soft-blue);
+    display: flex;  
+    align-items: center; 
+}
+.date-logo {
+    padding-right: 7px;
+}
+.card__copyrignt {
+    display: flex;
+    margin-top: 20px;
+}
+.card__copyrignt-image {
+    background-image: url(../images/image-avatar.png);
+    width: 33px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card__copyright-text {
+    color: var(--Soft-blue);
+}
+.card__copyright-text a {
+    text-decoration: none;
+    color: var(--Soft-blue);
+    transition: .5s;
+}
+.card__copyright-text a:hover {
+    color: var(--Cyan);
+    transition: .5s;
+}
+
