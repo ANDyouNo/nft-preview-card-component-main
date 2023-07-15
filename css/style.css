@@ -98,6 +98,7 @@ body::-webkit-scrollbar {
 .card__copyrignt {
     display: flex;
     margin-top: 20px;
+    height: 33px;
 }
 .card__copyrignt-image {
     background-image: url(../images/image-avatar.png);
@@ -107,6 +108,7 @@ body::-webkit-scrollbar {
 }
 .card__copyright-text {
     color: var(--Soft-blue);
+    padding: 8px;
 }
 .card__copyright-text a {
     text-decoration: none;
